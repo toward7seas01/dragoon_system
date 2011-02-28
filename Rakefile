@@ -15,7 +15,7 @@ Jeweler::Tasks.new do |gem|
   gem.name = "dragoon_system"
   gem.homepage = "http://github.com/toward7seas01/dragoon_system"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
+  gem.summary = %Q{personal suit}
   gem.description = %Q{personal suit}
   gem.email = "zhanyinan@sungomedical.com"
   gem.authors = ["zhanyinan"]
