@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "dragoon_system.gemspec",
     "lib/active_record/base.rb",
     "lib/dragoon_system.rb",
     "lib/string.rb",
