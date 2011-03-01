@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{dragoon_system}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["zhanyinan"]
@@ -27,8 +27,8 @@ Gem::Specification.new do |s|
     "dragoon_system.gemspec",
     "lib/active_record/base_patch.rb",
     "lib/dragoon_system.rb",
-    "lib/string_path.rb",
     "lib/patches.rb",
+    "lib/string_path.rb",
     "test/helper.rb",
     "test/test_dragoon_system.rb"
   ]
