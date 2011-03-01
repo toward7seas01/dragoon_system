@@ -20,13 +20,33 @@ module ActiveRecord
         end
       end
 
+      def newest
+        scoped(:order => "#{self.table_name}.updated_at desc")
+      end
+
+      def desc
+        scoped(:order => "#{self.table_name}.created_at desc")
+      end
+
+      def regexp(field, data, table = table_name)
+        table_name = if table.is_a?(String)
+          table
+        elsif table < ActiveRecord::Base
+          table.table_name
+        else
+          raise ArgumentError
+        end
+
+        regexp_condition(field, data, table_name)
+      end
+
       private
 
-      def or_empty_hash(param)
+      def or_empty_scope(param)
         unless param.blank?
           yield
         else
-          {}
+          scoped
         end
       end
 
@@ -35,6 +55,13 @@ module ActiveRecord
           []
         else
           input.split(" ").uniq
+        end
+      end
+
+      def regexp_condition(field, data, table)
+        or_empty_scope(data) do
+          data = handle_input(data).join("|")
+          {:conditions => ["#{table}.#{field} regexp ? ", data]}
         end
       end
     end

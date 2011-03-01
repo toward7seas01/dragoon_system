@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
     "lib/active_record/base_patch.rb",
     "lib/dragoon_system.rb",
     "lib/string_path.rb",
+    "lib/patches.rb",
     "test/helper.rb",
     "test/test_dragoon_system.rb"
   ]
