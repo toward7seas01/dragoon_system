@@ -29,8 +29,7 @@ Gem::Specification.new do |s|
     "lib/dragoon_system.rb",
     "lib/patches.rb",
     "lib/string_path.rb",
-    "test/helper.rb",
-    "test/test_dragoon_system.rb"
+    "test/helper.rb"
   ]
   s.homepage = %q{http://github.com/toward7seas01/dragoon_system}
   s.licenses = ["MIT"]
@@ -38,8 +37,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.5.2}
   s.summary = %q{personal suit}
   s.test_files = [
-    "test/helper.rb",
-    "test/test_dragoon_system.rb"
+    "test/helper.rb"
   ]
 
   if s.respond_to? :specification_version then
