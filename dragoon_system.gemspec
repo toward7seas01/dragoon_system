@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "dragoon_system.gemspec",
-    "lib/active_record/base.rb",
+    "lib/active_record/base_patch.rb",
     "lib/dragoon_system.rb",
     "lib/string.rb",
     "test/helper.rb",

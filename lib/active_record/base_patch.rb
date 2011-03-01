@@ -1,5 +1,3 @@
-require 'active_record'
-
 module ActiveRecord
   class Base
     extend ActiveSupport::Memoizable
@@ -7,7 +5,7 @@ module ActiveRecord
     def error_messages
       errors.full_messages.join("<br />")
     end
-    
+
     private
 
     def helpers
@@ -15,7 +13,7 @@ module ActiveRecord
     end
 
     class << self
-      
+
       def method_chains(params, *method_names)
         method_names.inject(scoped) do |result, method_name|
           result.send(method_name, params[method_name])

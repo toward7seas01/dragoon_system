@@ -13,7 +13,6 @@ Dir["#{File.dirname(__FILE__)}/**/*.rb"].each do |file|
   unless file == __FILE__
     require file
   end
-
 end
 
 
