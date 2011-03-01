@@ -61,7 +61,7 @@ module ActiveRecord
       def regexp_condition(field, data, table)
         or_empty_scope(data) do
           data = handle_input(data).join("|")
-          {:conditions => ["#{table}.#{field} regexp ? ", data]}
+          where("#{table}.#{field} regexp ? ", data)
         end
       end
     end
