@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{dragoon_system}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["zhanyinan"]
   s.date = %q{2011-03-02}
-  s.description = %q{personal suit}
+  s.description = %q{personal suit. the test suit is induction_cannon_01}
   s.email = %q{toward7seas@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -27,6 +27,8 @@ Gem::Specification.new do |s|
     "dragoon_system.gemspec",
     "lib/active_record/base_patch.rb",
     "lib/dragoon_system.rb",
+    "lib/module_patch.rb",
+    "lib/string_patch.rb",
     "test/helper.rb"
   ]
   s.homepage = %q{http://github.com/toward7seas01/dragoon_system}
