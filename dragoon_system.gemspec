@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["zhanyinan"]
-  s.date = %q{2011-03-01}
+  s.date = %q{2011-03-02}
   s.description = %q{personal suit}
   s.email = %q{toward7seas@gmail.com}
   s.extra_rdoc_files = [
@@ -27,8 +27,6 @@ Gem::Specification.new do |s|
     "dragoon_system.gemspec",
     "lib/active_record/base_patch.rb",
     "lib/dragoon_system.rb",
-    "lib/patches.rb",
-    "lib/string_path.rb",
     "test/helper.rb"
   ]
   s.homepage = %q{http://github.com/toward7seas01/dragoon_system}

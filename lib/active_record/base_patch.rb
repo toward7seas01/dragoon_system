@@ -20,6 +20,30 @@ module ActiveRecord
         end
       end
 
+      def fuzzy(args)
+        or_empty_scope(args) do
+          query_params = []
+          query_string = []
+
+          args.each {|model, attrs|
+            table, field, data = model, *attrs.to_a.flatten
+            table, field, data = [table.table_name, field.to_s, handle_input(data).join("|")]
+
+            unless data.blank?
+              query_string << "#{table}.#{field} regexp ?"
+              query_params << data
+            end
+          }
+
+          unless query_string.empty?
+            query_string = query_string.join(" or ")
+            scoped({:conditions => [query_string] + query_params})
+          else
+            scoped
+          end
+        end
+      end
+
       def newest
         scoped(:order => "#{self.table_name}.updated_at desc")
       end
