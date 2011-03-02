@@ -44,6 +44,25 @@ module ActiveRecord
         end
       end
 
+      def each_with_transaction(ids)
+        if ids.blank?
+          return :empty
+        end
+        
+        begin
+          records = find(ids)
+          transaction do
+            records.each do |record|
+              raise unless yield(record)
+            end
+          end
+        rescue
+          :error
+        else
+          :success
+        end
+      end
+
       def newest
         scoped(:order => "#{self.table_name}.updated_at desc")
       end
