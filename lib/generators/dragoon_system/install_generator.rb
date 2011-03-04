@@ -7,6 +7,7 @@ module DragoonSystem
 
       def copy_locale
         copy_file "../../../config/locales/en.yml", "config/locales/dragoon_system.en.yml"
+        copy_file "../../../config/locales/zh-CN.yml", "config/locales/dragoon_system.zh-CN.yml"
       end
 
     end
