@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
     "lib/dragoon_system.rb",
     "lib/module_patch.rb",
     "lib/string_patch.rb",
+    "lib/application_controller_patch.rb",
     "test/helper.rb"
   ]
   s.homepage = %q{http://github.com/toward7seas01/dragoon_system}

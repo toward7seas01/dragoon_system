@@ -51,3 +51,11 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+task :gs1 do
+  system("git instaweb --httpd=webrick --port=8625")
+end
+
+task :gs2 do
+  system("git instaweb --httpd=webrick --stop")
+end
