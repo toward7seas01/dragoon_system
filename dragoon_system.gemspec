@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{dragoon_system}
-  s.version = "0.1.3"
+  s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["zhanyinan"]
   s.date = %q{2011-03-04}
-  s.description = %q{personal suit, you can see the test suit in gem induction_cannon_01}
+  s.description = %q{personal suit}
   s.email = %q{toward7seas@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
     "lib/action_controller/base_patch.rb",
     "lib/active_record/base_patch.rb",
     "lib/dragoon_system.rb",
+    "lib/generators/dragoon_system/install_generator.rb",
     "lib/module_patch.rb",
     "lib/string_patch.rb"
   ]
