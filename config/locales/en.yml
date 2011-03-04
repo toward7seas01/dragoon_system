@@ -1,0 +1,7 @@
+en:
+  dragoon_system:
+    lack_necessary_method: lack necessary method
+    transaction:
+      success: The operation was successful
+      empty: Please select
+      error: Error，The operation is cancelled

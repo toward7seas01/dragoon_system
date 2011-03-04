@@ -1,0 +1,9 @@
+zh-CN:
+  dragoon_system:
+    lack_necessary_method: 缺少必要方法
+    transaction:
+      success: 已成功操作
+      empty: 请勾选
+      error: 异常，操作已回退
+      
+
