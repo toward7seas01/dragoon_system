@@ -24,6 +24,18 @@ module ActionController
 
     memoize :current_identifier, :current_model
 
+    def base_action(&block)
+      case current_model.each_with_transaction(params[:ids], &block)
+      when :success
+        flash.notice = t("dragoon_system.transaction.success")
+      when :empty
+        flash.alert = t("dragoon_system.transaction.empty")
+      else
+        flash.alert = t("dragoon_system.transaction.error")
+      end
+      redirect_to :back
+    end
+
 
     class << self
 

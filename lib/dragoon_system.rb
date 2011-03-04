@@ -9,11 +9,12 @@ rescue Bundler::BundlerError => e
 end
 
 
-Dir["#{File.dirname(__FILE__)}/**/*.rb"].each do |file|
+Dir["#{File.dirname(__FILE__)}/**/**/*.rb"].each do |file|
   unless file == __FILE__
     require file
   end
 end
+
 
 
 

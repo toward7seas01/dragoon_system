@@ -6,6 +6,7 @@ source "http://rubygems.org"
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 
+gem 'mysql2'
 gem "rails", "~> 3.0.5"
 
 
