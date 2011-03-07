@@ -1,6 +1,8 @@
 module ActionController
   class Base
     extend ActiveSupport::Memoizable
+
+    helper_method :current_identifier, :current_model
     
     private
 
