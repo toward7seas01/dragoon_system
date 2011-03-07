@@ -10,6 +10,10 @@ module DragoonSystem
         copy_file "../../../config/locales/zh-CN.yml", "config/locales/dragoon_system.zh-CN.yml"
       end
 
+      def copy_js
+        template "application.js", "public/javascripts/application.js"
+      end
+
     end
   end
 end
