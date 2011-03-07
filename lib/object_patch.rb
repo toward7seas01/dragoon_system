@@ -1,4 +1,4 @@
-class Module
+class Object
   def ah(*data)
     ActiveSupport::OrderedHash.[](*data)
   end
