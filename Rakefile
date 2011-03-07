@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "dragoon_system"
   gem.homepage = "http://github.com/toward7seas01/dragoon_system"
   gem.license = "MIT"
-  gem.summary = %Q{personal suit, you can see test suit in induction_cannon_01}
-  gem.description = %Q{personal suit, you can see test suit in induction_cannon_01}
+  gem.summary = %Q{personal suit, you can see test files in induction_cannon_01 gem}
+  gem.description = %Q{personal suit, you can see test files in induction_cannon_01 gem}
   gem.email = "toward7seas@gmail.com"
   gem.authors = ["zhanyinan"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
