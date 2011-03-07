@@ -51,7 +51,7 @@ module ActionController
             end
           end
         else
-          raise l("lack_necessary_method")
+          raise t("dragoon_system.lack_necessary_method")
         end
       end
 
