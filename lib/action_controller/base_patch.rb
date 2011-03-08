@@ -6,6 +6,10 @@ module ActionController
     
     private
 
+    def helpers
+      self.class.helpers
+    end
+
     def reload_page
       render :update do |page| page.reload end
     end
